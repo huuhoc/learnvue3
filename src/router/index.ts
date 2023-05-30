@@ -18,7 +18,15 @@ const router = createRouter({
       meta: {
         layout: 'Blank'
       }
-    }
+    },
+    {
+      path: '/upload-video',
+      name: 'uploadvideo',
+      component: () => import('../views/UploadVideo.vue'),
+      meta: {
+        layout: 'Default'
+      }
+    },
   ]
 })
 
