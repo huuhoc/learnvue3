@@ -1,9 +1,11 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-export default defineComponent({})
+export default defineComponent({
+  name: 'TheBlankLayout'
+})
 </script>
 
 <template>
-  <TheAppLayout />
+  <slot></slot>
 </template>
