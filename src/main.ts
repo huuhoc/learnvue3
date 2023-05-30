@@ -9,7 +9,7 @@ import router from './router'
 
 const app = createApp(App)
 
-import SvgIcon  from './components/SvgIcon.vue'
+import SvgIcon from './components/SvgIcon.vue'
 
 app.component('SvgIcon', SvgIcon)
 
