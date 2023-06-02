@@ -6,10 +6,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/HomeView.vue'),
-      meta: {
-        layout: 'Default'
-      }
+      component: () => import('../views/HomeView.vue')
     },
     {
       path: '/about',
@@ -22,11 +19,8 @@ const router = createRouter({
     {
       path: '/upload-video',
       name: 'uploadvideo',
-      component: () => import('../views/UploadVideo.vue'),
-      meta: {
-        layout: 'Default'
-      }
-    },
+      component: () => import('../views/UploadVideo.vue')
+    }
   ]
 })
 

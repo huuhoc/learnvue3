@@ -1,9 +1,20 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 
-export default defineComponent({})
+export default {
+  setup() {
+    const route = useRoute()
+    const layout = computed(() =>
+      route.meta.layout ? `The${route.meta.layout}Layout` : 'TheDefaultLayout'
+    )
+    return { layout }
+  }
+}
 </script>
 
 <template>
-  <TheAppLayout />
+  <component :is="layout">
+    <RouterView />
+  </component>
 </template>
