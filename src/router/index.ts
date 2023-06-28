@@ -13,7 +13,7 @@ const router = createRouter({
       name: 'about',
       component: () => import('../views/AboutView.vue'),
       meta: {
-        layout: 'Blank'
+        layout: 'Default'
       }
     },
     {

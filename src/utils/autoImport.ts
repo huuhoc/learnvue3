@@ -8,7 +8,6 @@ import { type App } from 'vue'
 
 export function registerLayouts(app: App<Element>) {
   const layouts = import.meta.glob<any>('@/layouts/*.vue', { eager: true })
-  console.log('layouts:', layouts)
 
   Object.entries(layouts).forEach(([, layout]) => {
     app.component(layout?.default?.name, layout?.default)
